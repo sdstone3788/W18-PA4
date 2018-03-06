@@ -11,6 +11,6 @@
 #include "Tennis.hpp"
 
 int tennis(std::vector<Interval> lessons) {
-  return 0;
+  
 }
 #endif

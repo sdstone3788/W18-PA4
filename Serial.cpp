@@ -42,25 +42,25 @@ int serial(std::vector<int> nums) {
 			return nums[half];
 		}
 		if (nums[start] + arrayL/2 != nums[half]){
-			cout << "half1: " << half << endl;
+		//	cout << "half1: " << half << endl;
 			end=half;
 			arrayL = end-start +1;
 			half = arrayL/2 + start;
 		}
 		else if (arrayL%2==0 && nums[end]-arrayL/2 +1 != nums[half] ){
-			cout << "start: " << start << "end: " << end << " half2: " << half << endl;
-			cout << "arrayL :" << arrayL <<endl;
+		//	cout << "start: " << start << "end: " << end << " half2: " << half << endl;
+		//	cout << "arrayL :" << arrayL <<endl;
 			start=half;
 			arrayL = end-start+1;
 			half=arrayL/2 + start;
 		}
 		else if (nums[end]-arrayL/2 !=nums[half]){
-			cout << "half3: " << half << end;
+	//		cout << "half3: " << half << end;
 			start=half;
 			arrayL=end-start+1;
 			half=arrayL/2 + start;
 		}
-		cout << "infinite loops here we come" << endl; 
+	//	cout << "infinite loops here we come" << endl; 
 	}
 
 			
