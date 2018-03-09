@@ -20,23 +20,22 @@ int buildings(TwoD_Array<int> survey) {
 	int r = survey.getNumRows()-1; //length of row
 	int c = survey.getNumCols()-1; //length of col
 	pair<int,int> top;
-	q.push(make_pair(0,0));
+//	q.push(make_pair(0,0));
 	for (int x=0; x<survey.getNumRows(); x++){
 		for (int y=0; y<survey.getNumCols(); y++){
 			if (survey.at(x,y)==1){
 				count++;
 				int i = x;
 				int j = y;
-				if (survey.at(i,j) == 0) {
+		/*		if (survey.at(i,j) == 0) {
 					q.pop();
 					continue;
-				}
+				} */
 				
 				q.push(make_pair(i,j));
 				survey.at(x,y)=0;
 				while (!(q.empty())){
 					top = q.front();
-					q.pop();
 					i = top.first;
 					j = top.second;
 					survey.at(i,j) = 0;
@@ -65,6 +64,7 @@ int buildings(TwoD_Array<int> survey) {
 						}	
 					}
 					//q.pop();
+					q.pop();
 				}
 			}
 			
