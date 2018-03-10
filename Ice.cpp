@@ -1,8 +1,8 @@
 // CSE 101 Winter 2018, PA 4
 //
-// Name: TODO put both partners' info if applicable
-// PID: TODO
-// Sources of Help: TODO
+// Name: Samantha Stone, Sarah Ji
+// PID: A12861099, A12640758
+// Sources of Help: 
 // Due: March 10th, 2018 at 11:59 PM
 
 #ifndef __ICE_CPP__

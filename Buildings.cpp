@@ -1,8 +1,8 @@
 // CSE 101 Winter 2018, PA 4
 //
-// Name: TODO put both partners' info if applicable
-// PID: TODO
-// Sources of Help: TODO
+// Name: Samantha Stone, Sarah Ji
+// PID: A12861099, A12640758
+// Sources of Help: discussed ideas with Yasmine Nassar
 // Due: March 10th, 2018 at 11:59 PM
 
 #ifndef __BUILDINGS_CPP__
@@ -72,66 +72,4 @@ int buildings(TwoD_Array<int> survey) {
 	}
 	return count;
 }
-/*
-	 int count = 0;
-	 int scount=0;
-	 for (int i = 0; i < survey.getNumRows(); i++) {
-	 for (int j = 0; j < survey.getNumCols(); j++) {
-	 if(survey.at(i,j) == 1) {
-// checking cells above and to the left
-if (i != 0 && j != 0) {
-if(survey.at(i-1,j) == 0 && survey.at(i,j-1) == 0) {
-count++;
-scount++;
-survey.at(i,j) = scount; 
-}
-else if (survey.at(i-1,j) != 0 && survey.at(i,j-1) != 0) {
-survey.at(i,j) = min(survey.at(i-1,j),survey.at(i,j-1));
-
-if (survey.at(i-1, j-1)==0 &&survey.at(i-1,j) != survey.at(i,j-1)) {
-
-count--;
-}
-}
-else if (survey.at(i-1,j) != 0) {
-survey.at(i,j) = survey.at(i-1,j);
-}
-else {
-survey.at(i,j) = survey.at(i,j-1); 
-}
-}
-// first row
-// used to say i!=0
-else if (i == 0 && j!=0) {
-if (survey.at(i,j-1) != 0) {
-survey.at(i,j) = survey.at(i,j-1);
-}
-else {
-scount++;
-count++;
-survey.at(i,j) = scount;
-}
-}
-// first column
-else if(j==0){
-if (i!=0 && survey.at(i-1,j) != 0) {
-survey.at(i,j) = survey.at(i-1,j);
-}
-else {
-scount++;
-count++;
-survey.at(i,j) = scount;
-}
-}
-}
-}
-}
-//		survey.printOut();
-return count;
-} */
-//survey.at(i-1,j) != survey.at(i,j-1) && 
-//|| survey.at(i-1, j)<count))
-//												survey.at(i-1,j)=survey.at(i,j);
-//													survey.at(i, j-1)=survey.at(i,j);
-//
 #endif
